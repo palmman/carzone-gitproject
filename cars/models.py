@@ -96,7 +96,7 @@ class Car(models.Model):
     color = models.CharField(max_length=100)
     model = models.CharField(max_length=100)
     year = models.IntegerField(('year'), choices=year_choice)
-    cindition = models.CharField(max_length=100)
+    condition = models.CharField(max_length=100)
     price = models.IntegerField()
     description = RichTextField()
     car_photo = models.ImageField(upload_to='photo/%Y/%m/%d/')
